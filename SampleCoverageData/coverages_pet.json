@@ -1,0 +1,90 @@
+{
+    "_comment": "All the available coverages for PET Line fetched from PolicyCenter",
+    "lineName": "Pet",
+    "coverages": [
+        {
+            "name": "Accidental death & Illness",
+            "isRequired": true,
+            "limit": [
+                14000,
+                10000
+            ],
+            "deductible": [
+                150,
+                250
+            ],
+            "coPay": [
+                "30%",
+                "40%",
+                "60%"
+            ],
+            "waitingPeriod": [
+                "30 days",
+                "40 days"
+            ]
+        },
+        {
+            "name": "Loss of Pet",
+            "isRequired": false,
+            "limit": [
+                14000,
+                10000
+            ],
+            "deductible": [
+                150,
+                250
+            ],
+            "coPay": [
+                "30%",
+                "40%",
+                "60%"
+            ],
+            "waitingPeriod": [
+                "30 days",
+                "40 days"
+            ]
+        },
+        {
+            "name": "Mortality benefit",
+            "isRequired": true,
+            "limit": [
+                14000,
+                10000
+            ],
+            "deductible": [
+                150,
+                250
+            ],
+            "coPay": [
+                "30%",
+                "40%",
+                "60%"
+            ],
+            "waitingPeriod": [
+                "30 days",
+                "40 days"
+            ]
+        },
+        {
+            "name": "Kennel & Cattery Fees",
+            "isRequired": false,
+            "limit": [
+                14000,
+                10000
+            ],
+            "deductible": [
+                150,
+                250
+            ],
+            "coPay": [
+                "30%",
+                "40%",
+                "60%"
+            ],
+            "waitingPeriod": [
+                "30 days",
+                "40 days"
+            ]
+        }
+    ]
+}
