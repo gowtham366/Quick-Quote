@@ -1,0 +1,108 @@
+{
+    "section":{
+        "sectionTitle":["Pet Basic Information","Additional Details","Pet Rate Modifiers"],
+        "Pet Basic Information":[
+            {
+                "question":"Pet Type",
+                "type":"dropdown",
+                "availableOptions":["Dog","Cat"],
+                "isRequired":true
+            },
+            {
+                "question":"Pet Name",
+                "type":"text",
+                "isRequired":true
+            },
+            {
+                "question":"Sex of Pet",
+                "type":"dropdown",
+                "availableOptions":["Male","Female"],
+                "isRequired":true
+            },
+            {
+                "question":"Pet Age",
+                "type":"dropdown",
+                "availableOptions":["6 months","1 year","2 years","3 years","4 years","5 years","6 years"],
+                "isRequired":true
+            },
+            {
+                "question":"Pure Breed Status",
+                "type":"radio",
+                "availableOptions":["Yes","No"],
+                "isRequired":true
+            },
+            {
+                "question":"Breed of Pet",
+                "type":"dropdown",
+                "hasMultipleOptions":true,
+                "availableOptions":{
+                    "Dog":["Boxer","Mastiff"],
+                    "Cat":["Angora","cat2"]
+                },
+                "isRequired":true
+            },
+            {
+                "question":"Pedigree Certificate No.",
+                "type":"text",
+                "isRequired":false
+            },
+            {
+                "question":"Purchase Price of Pet",
+                "type":"number",
+                "isRequired":false
+            },
+            {
+                "question":"Date of Purchase",
+                "type":"date",
+                "isRequired":false
+            }
+        ],
+        "Additional Details":[
+            {
+                "question":"Weight of the Pet",
+                "type":"number",
+                "isRequired":false
+            },
+            {
+                "question":"DeClawed Status",
+                "type":"radio",
+                "availableOptions":["Yes","No"],
+                "isRequired":false
+            },
+            {
+                "question":"Outdoor",
+                "type":"radio",
+                "availableOptions":["Yes","No"],
+                "isRequired":false
+            }
+        ],
+        "Pet Rate Modifiers":[
+            {
+                "question":"Neutered or spayed?",
+                "type":"radio",
+                "availableOptions":["Yes","No"],
+                "isRequired":false
+            },
+            {
+                "question":"Microchipped?",
+                "type":"radio",
+                "availableOptions":["Yes","No"],
+                "isRequired":false
+            },
+            {
+                "question":"Microchip Number",
+                "type":"text",            
+                "isRequired":false,
+                "requiredFactor":{
+                    "Microchipped?":"Yes"
+                }
+            },
+            {
+                "question":"Weight Control Management ",
+                "type":"radio",  
+                "availableOptions":["Yes","No"],          
+                "isRequired":false
+            }         
+        ]
+    }
+}

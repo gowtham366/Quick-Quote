@@ -1,0 +1,101 @@
+{  
+    "lobName":"Pet",
+    "bundleCoverage":[  
+        {  
+            "bundleName":"Good",
+            "availableDeductable":[  
+                100,
+                234,
+                356
+            ],
+            "availableWaitingPeriod":[  
+                "10 days",
+                "20 days",
+                "30 days"
+            ],
+            "availableCoPay":[  
+                "10%",
+                "20%",
+                "30%"
+            ],
+            "coverages":[  
+                {  
+                    "coverageName":"Accidental death & Illness",
+                    "isRequired":true
+                },
+                {  
+                    "coverageName":"Loss of Pet",
+                    "isRequired":false
+                },
+                {  
+                    "coverageName":"Mortality benefit",
+                    "isRequired":true
+                }
+            ]
+        },
+        {  
+            "bundleName":"Best",
+            "availableDeductable":[  
+                140,
+                244,
+                358
+            ],
+            "availableWaitingPeriod":[  
+                "10 days",
+                "20 days",
+                "30 days"
+            ],
+            "availableCoPay":[  
+                "10%",
+                "20%",
+                "30%"
+            ],
+            "coverages":[  
+                {  
+                    "coverageName":"Advertising Expenses",
+                    "isRequired":true
+                },
+                {  
+                    "coverageName":"Loss of Pet",
+                    "isRequired":false
+                },
+                {  
+                    "coverageName":"Kennel & Cattery Fees",
+                    "isRequired":true
+                }
+            ]
+        },
+        {  
+            "bundleName":"Better",
+            "availableDeductable":[  
+                140,
+                244,
+                358
+            ],
+            "availableWaitingPeriod":[  
+                "10 days",
+                "20 days",
+                "30 days"
+            ],
+            "availableCoPay":[  
+                "10%",
+                "20%",
+                "30%"
+            ],
+            "coverages":[  
+                {  
+                    "coverageName":"Advertising Expenses",
+                    "isRequired":true
+                },
+                {  
+                    "coverageName":"Loss of Pet",
+                    "isRequired":false
+                },
+                {  
+                    "coverageName":"Kennel & Cattery Fees",
+                    "isRequired":true
+                }
+            ]
+        }
+    ]
+}

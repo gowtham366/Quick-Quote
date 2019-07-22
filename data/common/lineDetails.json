@@ -1,0 +1,17 @@
+{  
+    "_comment":"File for holding list of LOB's and it's directory path",
+    "lobDetails":[  
+        {  
+            "lobName":"Pet",
+            "dataDir":"data\\lob\\pet\\",
+            "imageDir":"",
+            "preQualificationQuestionAvail":true
+        },
+        {  
+            "lobName":"Travel",
+            "dataDir":"data\\lob\\travel\\",
+            "imageDir":"",
+            "preQualificationQuestionAvail":false
+        }
+    ]
+}
