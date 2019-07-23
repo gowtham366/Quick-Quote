@@ -1,0 +1,389 @@
+{
+    "coverages":[
+        {
+            "coverageName":"Injury Coverage",
+            "pattenCode":"",
+            "isMandatoryCoverage":true,
+            "isStandardCoverage":false,
+            "isExtendedCoverage":false,
+            "isFlexibleCoverage":false,
+            "isAdditionalCoverage":false,
+            "covTerms":[
+                {
+                    "covTermName":"Annual Limit",
+                    "covTermPattenCode":"",
+                    "limit":"7000"
+                },
+                {
+                    "covTermName":"Deductible",
+                    "covTermPattenCode":"",
+                    "limit":"250"
+                },                
+                {
+                    "covTermName":"Co-pay",
+                    "covTermPattenCode":"",
+                    "limit":"30"
+                },
+                {
+                    "covTermName":"Waiting Period",
+                    "covTermPattenCode":"",
+                    "limit":"30days"
+                }
+            ]
+        },
+        {
+            "coverageName":"Loss due to Theft or straying",
+            "pattenCode":"",
+            "isMandatoryCoverage":false,
+            "isStandardCoverage":true,
+            "isExtendedCoverage":true,
+            "isFlexibleCoverage":true,
+            "isAdditionalCoverage":false,
+            "covTerms":[
+                {
+                    "covTermName":"Annual Limit",
+                    "covTermPattenCode":"",
+                    "limit":"7000"
+                },
+                {
+                    "covTermName":"Deductible",
+                    "covTermPattenCode":"",
+                    "limit":"250"
+                },                
+                {
+                    "covTermName":"Co-pay",
+                    "covTermPattenCode":"",
+                    "limit":"30"
+                },
+                {
+                    "covTermName":"Waiting Period",
+                    "covTermPattenCode":"",
+                    "limit":"10days"
+                }
+            ]
+        },
+        {
+            "coverageName":"Loss due to Theft or straying",
+            "pattenCode":"",
+            "isMandatoryCoverage":false,
+            "isStandardCoverage":true,
+            "isExtendedCoverage":true,
+            "isFlexibleCoverage":true,
+            "isAdditionalCoverage":false,
+            "covTerms":[
+                {
+                    "covTermName":"Annual Limit",
+                    "covTermPattenCode":"",
+                    "limit":"7000"
+                },
+                {
+                    "covTermName":"Deductible",
+                    "covTermPattenCode":"",
+                    "limit":"250"
+                },                
+                {
+                    "covTermName":"Co-pay",
+                    "covTermPattenCode":"",
+                    "limit":"30"
+                },
+                {
+                    "covTermName":"Waiting Period",
+                    "covTermPattenCode":"",
+                    "limit":"10days"
+                }
+            ]
+        },
+        {
+            "coverageName":"Coverage for illness conditions",
+            "pattenCode":"",
+            "isMandatoryCoverage":true,
+            "isStandardCoverage":false,
+            "isExtendedCoverage":false,
+            "isFlexibleCoverage":false,
+            "isAdditionalCoverage":false,
+            "covTerms":[
+                {
+                    "covTermName":"Annual Limit",
+                    "covTermPattenCode":"",
+                    "limit":"7000"
+                },
+                {
+                    "covTermName":"Deductible",
+                    "covTermPattenCode":"",
+                    "limit":"250"
+                },                
+                {
+                    "covTermName":"Co-pay",
+                    "covTermPattenCode":"",
+                    "limit":"30"
+                },
+                {
+                    "covTermName":"Waiting Period",
+                    "covTermPattenCode":"",
+                    "limit":"10days"
+                }
+            ]
+        },
+        {
+            "coverageName":"Coverage for Hereditary and Congenital Diseases",
+            "pattenCode":"",
+            "isMandatoryCoverage":true,
+            "isStandardCoverage":false,
+            "isExtendedCoverage":false,
+            "isFlexibleCoverage":false,
+            "isAdditionalCoverage":false,
+            "covTerms":[
+                {
+                    "covTermName":"Annual Limit",
+                    "covTermPattenCode":"",
+                    "limit":"7000"
+                },
+                {
+                    "covTermName":"Deductible",
+                    "covTermPattenCode":"",
+                    "limit":"250"
+                },                
+                {
+                    "covTermName":"Co-pay",
+                    "covTermPattenCode":"",
+                    "limit":"30"
+                },
+                {
+                    "covTermName":"Waiting Period",
+                    "covTermPattenCode":"",
+                    "limit":"10days"
+                }
+            ]
+        },
+        {
+            "coverageName":"Coverage for Dental Ailments and procedures",
+            "pattenCode":"",
+            "isMandatoryCoverage":true,
+            "isStandardCoverage":false,
+            "isExtendedCoverage":false,
+            "isFlexibleCoverage":false,
+            "isAdditionalCoverage":false,
+            "covTerms":[
+                {
+                    "covTermName":"Annual Limit",
+                    "covTermPattenCode":"",
+                    "limit":"7000"
+                },
+                {
+                    "covTermName":"Deductible",
+                    "covTermPattenCode":"",
+                    "limit":"250"
+                },                
+                {
+                    "covTermName":"Co-pay",
+                    "covTermPattenCode":"",
+                    "limit":"30"
+                },
+                {
+                    "covTermName":"Waiting Period",
+                    "covTermPattenCode":"",
+                    "limit":"10days"
+                }
+            ]
+        },
+        {
+            "coverageName":"Coverage for Cancer Disease",
+            "pattenCode":"",
+            "isMandatoryCoverage":true,
+            "isStandardCoverage":false,
+            "isExtendedCoverage":false,
+            "isFlexibleCoverage":false,
+            "isAdditionalCoverage":false,
+            "covTerms":[
+                {
+                    "covTermName":"Annual Limit",
+                    "covTermPattenCode":"",
+                    "limit":"7000"
+                },
+                {
+                    "covTermName":"Deductible",
+                    "covTermPattenCode":"",
+                    "limit":"250"
+                },                
+                {
+                    "covTermName":"Co-pay",
+                    "covTermPattenCode":"",
+                    "limit":"30"
+                },
+                {
+                    "covTermName":"Waiting Period",
+                    "covTermPattenCode":"",
+                    "limit":"10days"
+                }
+            ]
+        },
+        {
+            "coverageName":"Coverage for Behavioral Theraphy",
+            "pattenCode":"",
+            "isMandatoryCoverage":true,
+            "isStandardCoverage":false,
+            "isExtendedCoverage":false,
+            "isFlexibleCoverage":false,
+            "isAdditionalCoverage":false,
+            "covTerms":[
+                {
+                    "covTermName":"Annual Limit",
+                    "covTermPattenCode":"",
+                    "limit":"7000"
+                },
+                {
+                    "covTermName":"Waiting Period",
+                    "covTermPattenCode":"",
+                    "limit":"10days"
+                }
+            ]
+        },
+        {
+            "coverageName":"Coverage for Wellness Exams",
+            "pattenCode":"",
+            "isMandatoryCoverage":true,
+            "isStandardCoverage":false,
+            "isExtendedCoverage":false,
+            "isFlexibleCoverage":false,
+            "isAdditionalCoverage":false,
+            "covTerms":[
+                {
+                    "covTermName":"Annual Limit",
+                    "covTermPattenCode":"",
+                    "limit":"7000"
+                },
+                {
+                    "covTermName":"Waiting Period",
+                    "covTermPattenCode":"",
+                    "limit":"10days"
+                }
+            ]
+        },
+        {
+            "coverageName":"Coverage for Vaccinations to prevent diseases",
+            "pattenCode":"",
+            "isMandatoryCoverage":true,
+            "isStandardCoverage":false,
+            "isExtendedCoverage":false,
+            "isFlexibleCoverage":false,
+            "isAdditionalCoverage":false,
+            "covTerms":[
+                {
+                    "covTermName":"Annual Limit",
+                    "covTermPattenCode":"",
+                    "limit":"7000"
+                },
+                {
+                    "covTermName":"Waiting Period",
+                    "covTermPattenCode":"",
+                    "limit":"10days"
+                }
+            ]
+        },
+        {
+            "coverageName":"Coverage for Bloodwork",
+            "pattenCode":"",
+            "isMandatoryCoverage":true,
+            "isStandardCoverage":false,
+            "isExtendedCoverage":false,
+            "isFlexibleCoverage":false,
+            "isAdditionalCoverage":false,
+            "covTerms":[
+                {
+                    "covTermName":"Annual Limit",
+                    "covTermPattenCode":"",
+                    "limit":"7000"
+                },
+                {
+                    "covTermName":"Waiting Period",
+                    "covTermPattenCode":"",
+                    "limit":"10days"
+                }
+            ]
+        },
+        {
+            "coverageName":"Coverage to perform Urinalysis",
+            "pattenCode":"",
+            "isMandatoryCoverage":true,
+            "isStandardCoverage":false,
+            "isExtendedCoverage":false,
+            "isFlexibleCoverage":false,
+            "isAdditionalCoverage":false,
+            "covTerms":[
+                {
+                    "covTermName":"Annual Limit",
+                    "covTermPattenCode":"",
+                    "limit":"7000"
+                },
+                {
+                    "covTermName":"Waiting Period",
+                    "covTermPattenCode":"",
+                    "limit":"10days"
+                }
+            ]
+        },
+        {
+            "coverageName":"Coverage for Doctor suggestted diets and Supplements",
+            "pattenCode":"",
+            "isMandatoryCoverage":true,
+            "isStandardCoverage":false,
+            "isExtendedCoverage":false,
+            "isFlexibleCoverage":false,
+            "isAdditionalCoverage":false,
+            "covTerms":[
+                {
+                    "covTermName":"Annual Limit",
+                    "covTermPattenCode":"",
+                    "limit":"7000"
+                },
+                {
+                    "covTermName":"Waiting Period",
+                    "covTermPattenCode":"",
+                    "limit":"10days"
+                }
+            ]
+        },
+        {
+            "coverageName":"Coverage for Alternate Theraphy and Medicines",
+            "pattenCode":"",
+            "isMandatoryCoverage":true,
+            "isStandardCoverage":false,
+            "isExtendedCoverage":false,
+            "isFlexibleCoverage":false,
+            "isAdditionalCoverage":false,
+            "covTerms":[
+                {
+                    "covTermName":"Annual Limit",
+                    "covTermPattenCode":"",
+                    "limit":"7000"
+                },
+                {
+                    "covTermName":"Waiting Period",
+                    "covTermPattenCode":"",
+                    "limit":"10days"
+                }
+            ]
+        },
+        {
+            "coverageName":"Coverage for Tick Paralysis",
+            "pattenCode":"",
+            "isMandatoryCoverage":true,
+            "isStandardCoverage":false,
+            "isExtendedCoverage":false,
+            "isFlexibleCoverage":false,
+            "isAdditionalCoverage":false,
+            "covTerms":[
+                {
+                    "covTermName":"Annual Limit",
+                    "covTermPattenCode":"",
+                    "limit":"7000"
+                },
+                {
+                    "covTermName":"Waiting Period",
+                    "covTermPattenCode":"",
+                    "limit":"10days"
+                }
+            ]
+        }
+    ]
+}
