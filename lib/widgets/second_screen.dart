@@ -1,6 +1,13 @@
 import 'package:flutter_web/material.dart';
+import 'dart:async' show Future;
+import 'package:flutter_web/services.dart' show rootBundle;
+import 'dart:convert';
+import '../jsonModels/LineDetails.dart';
 
 class PinValidationScreen extends StatelessWidget {
+  Future<String> loadLineDetailsFromAssets() async {
+    return await rootBundle.loadString('data\common\lineDetails.json');
+  }
   @override
   Widget build(BuildContext context) {
     final zipController = TextEditingController();
@@ -31,7 +38,7 @@ class PinValidationScreen extends StatelessWidget {
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.symmetric(vertical: 10),
                     labelText: 'ZIP Code',
-                  ),  
+                  ),
                 ),
               ),
               SizedBox(
@@ -39,7 +46,10 @@ class PinValidationScreen extends StatelessWidget {
               ),
               RaisedButton(
                 child: Text('Check Availability'),
-                onPressed: () {},
+                onPressed: () {
+
+                 // String jsonString = await loadLineDetailsFromAssets();
+                },
               ),
             ],
           ),
@@ -47,4 +57,6 @@ class PinValidationScreen extends StatelessWidget {
       ),
     );
   }
+
+  
 }
