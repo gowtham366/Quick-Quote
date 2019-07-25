@@ -1,37 +1,43 @@
 {
     "section":{
         "sectionTitle":["Pet Basic Information","Additional Details","Pet Rate Modifiers"],
-        "Pet Basic Information":[
+        "PetBasicInformation":[
             {
+                "id":"petName",
+                "question":"Pet Name",
+                "type":"text",
+                "isRequired":true
+            },
+            {
+                "id":"petType",
                 "question":"Pet Type",
                 "type":"dropdown",
                 "availableOptions":["Dog","Cat"],
                 "isRequired":true
             },
             {
-                "question":"Pet Name",
-                "type":"text",
-                "isRequired":true
-            },
-            {
+                "id":"petSex",
                 "question":"Sex of Pet",
                 "type":"dropdown",
                 "availableOptions":["Male","Female"],
                 "isRequired":true
             },
             {
+                "id":"petAge",
                 "question":"Pet Age",
                 "type":"dropdown",
                 "availableOptions":["6 months","1 year","2 years","3 years","4 years","5 years","6 years"],
                 "isRequired":true
             },
             {
+                "id":"pureBreedStatus",
                 "question":"Pure Breed Status",
                 "type":"radio",
                 "availableOptions":["Yes","No"],
                 "isRequired":true
             },
             {
+                "id":"petBreed",
                 "question":"Breed of Pet",
                 "type":"dropdown",
                 "hasMultipleOptions":true,
@@ -42,54 +48,63 @@
                 "isRequired":true
             },
             {
+                "id":"pedigreeCertNo",
                 "question":"Pedigree Certificate No.",
                 "type":"text",
                 "isRequired":false
             },
             {
+                "id":"petPurchasePrice",
                 "question":"Purchase Price of Pet",
                 "type":"number",
                 "isRequired":false
             },
             {
+                "id":"dateOfPurchase",
                 "question":"Date of Purchase",
                 "type":"date",
                 "isRequired":false
             }
         ],
-        "Additional Details":[
+        "AdditionalDetails":[
             {
+                "id":"petWeight",
                 "question":"Weight of the Pet",
                 "type":"number",
                 "isRequired":false
             },
             {
+                "id":"deClawedStatus",
                 "question":"DeClawed Status",
                 "type":"radio",
                 "availableOptions":["Yes","No"],
                 "isRequired":false
             },
             {
+                "id":"outdoor",
                 "question":"Outdoor",
                 "type":"radio",
                 "availableOptions":["Yes","No"],
                 "isRequired":false
             }
         ],
-        "Pet Rate Modifiers":[
+        "PetRateModifiers":[
             {
+                "id":"neuteredOrSpayed",
                 "question":"Neutered or spayed?",
                 "type":"radio",
                 "availableOptions":["Yes","No"],
                 "isRequired":false
             },
             {
+                "id":"microchipped",
                 "question":"Microchipped?",
                 "type":"radio",
                 "availableOptions":["Yes","No"],
                 "isRequired":false
             },
             {
+                "id":"microchipNumber",
                 "question":"Microchip Number",
                 "type":"text",            
                 "isRequired":false,
@@ -98,6 +113,7 @@
                 }
             },
             {
+                "id":"weightContronMgmt",
                 "question":"Weight Control Management ",
                 "type":"radio",  
                 "availableOptions":["Yes","No"],          
