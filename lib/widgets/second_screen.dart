@@ -1,13 +1,12 @@
 import 'package:flutter_web/material.dart';
 import 'dart:async' show Future;
 import 'package:flutter_web/services.dart' show rootBundle;
+import 'package:quick_quote/jsonModels/CoverageList.dart';
 import 'dart:convert';
-import '../jsonModels/LineDetails.dart';
+import '../jsonModels/LineDetailList.dart';
+import 'dart:developer';
 
 class PinValidationScreen extends StatelessWidget {
-  Future<String> loadLineDetailsFromAssets() async {
-    return await rootBundle.loadString('data\common\lineDetails.json');
-  }
   @override
   Widget build(BuildContext context) {
     final zipController = TextEditingController();
@@ -46,10 +45,15 @@ class PinValidationScreen extends StatelessWidget {
               ),
               RaisedButton(
                 child: Text('Check Availability'),
-                onPressed: () {
-
-                 // String jsonString = await loadLineDetailsFromAssets();
-                },
+                onPressed: () {},
+              ),
+              Container(
+                child: FutureBuilder(
+                  future: coverageDetails(),
+                  builder: (BuildContext context, snapshot) {
+                   // return Text(context.);
+                  },
+                ),
               ),
             ],
           ),
@@ -58,5 +62,17 @@ class PinValidationScreen extends StatelessWidget {
     );
   }
 
-  
+  Future<String> coverageDetailsFromAssets() async {
+    return await rootBundle.loadString('data\lob\pet\coverages.json');
+  }
+
+  Future coverageDetails() async {
+    String jsonString = await coverageDetailsFromAssets();
+    final jsonResponse = json.decode(jsonString);
+    CoverageList coverageList = new CoverageList.fromJson(jsonResponse);
+    //return coverageList.coverageList.forEach(f)
+    List<String> list; 
+    coverageList.coverageList.map((i) => list.add(i.Name));
+    return list;
+  }
 }

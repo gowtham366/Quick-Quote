@@ -12,27 +12,27 @@ class CovTerm {
         limit: json['limit']);
   }
 
-  Map<String,String> get covTermMap{
-    return{
-      "Name" : this.name,
-      "pattenCode":this.pattenCode,
-      "limit" : this.limit 
+  Map<String, String> get covTermMap {
+    return {
+      "Name": this.name,
+      "pattenCode": this.pattenCode,
+      "limit": this.limit
     };
   }
 
-  String get Name{
+  String get Name {
     return this.name;
   }
 
-  String get PattenCode{
+  String get PattenCode {
     return this.pattenCode;
   }
 
-  String get Limit{
+  String get Limit {
     return this.limit;
   }
 
-  void set Limit(String limit){
+  void set Limit(String limit) {
     this.limit = limit;
   }
 }

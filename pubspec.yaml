@@ -28,4 +28,5 @@ flutter:
   uses-material-design: true
   assets:
     - web/assets/images/pet.jpg
-    - web/assets/images/travel.jpg      
+    - web/assets/images/travel.jpg
+    - web\assets\data\lob\pet\coverages.json     

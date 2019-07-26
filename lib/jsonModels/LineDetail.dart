@@ -20,25 +20,25 @@ class LineDetail {
   Map<String, dynamic> get LineDetailMap {
     return {
       "LOBName": this.lobName,
-      "filePath":this.folderPath,
-      "imagePath":this.imgPath,
-      "hasPreQualificationQues":this.hasPreQualificationQues
+      "filePath": this.folderPath,
+      "imagePath": this.imgPath,
+      "hasPreQualificationQues": this.hasPreQualificationQues
     };
   }
 
-  String get LOBName{
+  String get LOBName {
     return this.lobName;
   }
-  String get FolderPath{
+
+  String get FolderPath {
     return this.folderPath;
   }
 
-  String get ImagePath{
+  String get ImagePath {
     return this.imgPath;
   }
 
-  bool get HasPreQualificationQues{
+  bool get HasPreQualificationQues {
     return this.hasPreQualificationQues;
   }
-
 }
