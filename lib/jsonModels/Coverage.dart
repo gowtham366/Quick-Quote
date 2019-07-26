@@ -93,4 +93,12 @@ class Coverage {
   bool get IsSelectedByUser {
     return this.isSelectedByUser;
   }
+
+  void set IsSelectedByUser(bool status) {
+    this.isSelectedByUser = status;
+  }
+
+  void set CoverageCost(double cost) {
+    this.coverageCost = cost;
+  }
 }
