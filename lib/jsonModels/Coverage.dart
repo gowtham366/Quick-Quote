@@ -54,32 +54,43 @@ class Coverage {
     };
   }
 
-String get Name{
-  return this.name;
-}
-String get PattenCode{
-  return this.pattenCode;
-}
-bool get IsMandatoryCoverage{
-  return this.isMandatoryCoverage;
-}
-bool get IsStandardCoverage{
-  return this.isStandardCoverage;
-}
-bool get IsExtendedCoverage{
-  return this.isExtendedCoverage;
-}
-bool get IsAdditionalCoverage{
-  return this.IsAdditionalCoverage;
-}
-List<CovTerm> get CovTerms{
-  return this.covTerms;
-}
-double get CoverageCost{
-  return this.coverageCost;
-}
-bool get IsSelectedByUser{
-  return this.isSelectedByUser;
-}
+  String get Name {
+    return this.name;
+  }
 
+  String get PattenCode {
+    return this.pattenCode;
+  }
+
+  bool get IsMandatoryCoverage {
+    return this.isMandatoryCoverage;
+  }
+
+  bool get IsStandardCoverage {
+    return this.isStandardCoverage;
+  }
+
+  bool get IsExtendedCoverage {
+    return this.isExtendedCoverage;
+  }
+
+  bool get IsFlexibleCoverage {
+    return this.isFlexibleCoverage;
+  }
+
+  bool get IsAdditionalCoverage {
+    return this.isAdditionalCoverage;
+  }
+
+  List<CovTerm> get CovTerms {
+    return this.covTerms;
+  }
+
+  double get CoverageCost {
+    return this.coverageCost;
+  }
+
+  bool get IsSelectedByUser {
+    return this.isSelectedByUser;
+  }
 }
