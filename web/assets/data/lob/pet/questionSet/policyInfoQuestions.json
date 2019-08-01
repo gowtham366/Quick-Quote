@@ -11,14 +11,14 @@
             {
                 "id":"petType",
                 "question":"Pet Type",
-                "type":"dropdown",
+                "type":"radio",
                 "availableOptions":["Dog","Cat"],
                 "isRequired":true
             },
             {
                 "id":"petSex",
                 "question":"Sex of Pet",
-                "type":"dropdown",
+                "type":"radio",
                 "availableOptions":["Male","Female"],
                 "isRequired":true
             },

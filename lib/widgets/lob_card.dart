@@ -1,5 +1,5 @@
 import 'package:flutter_web/material.dart';
-import './second_screen.dart';
+import 'package:quick_quote/screens/zip_validation.dart';
 
 class LOBCard extends StatelessWidget {
   final String imgPath;
@@ -13,7 +13,7 @@ class LOBCard extends StatelessWidget {
         onTap: () =>Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => PinValidationScreen(),
+            builder: (context) => ZipValidationScreen(),
           ),
         ),
         child: Padding(
