@@ -8,10 +8,12 @@ environment:
 dependencies:
   flutter_web: any
   flutter_web_ui: any
+  #dynamic_widget: any
 
 dev_dependencies:
-  build_runner: ^1.5.0
-  build_web_compilers: ^2.1.0
+  build_runner: ^1.6.5
+  build_web_compilers: ^2.0.0
+  build_daemon: ^2.0.0
   pedantic: ^1.7.0
 
 dependency_overrides:
@@ -29,4 +31,9 @@ flutter:
   assets:
     - web/assets/images/pet.jpg
     - web/assets/images/travel.jpg
-    - web\assets\data\lob\pet\coverages.json     
+    - web/assets/data/lob/pet/coverages.json   
+  fonts:
+    - family : Shrikhand
+    - fonts:
+      - assets:
+          - fonts/Shrikhand-Regular.ttf

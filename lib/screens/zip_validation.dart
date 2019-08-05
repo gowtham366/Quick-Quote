@@ -1,17 +1,9 @@
 import 'package:flutter_web/material.dart';
-import 'dart:async' show Future;
-import 'package:flutter_web/services.dart' show rootBundle;
-import 'package:quick_quote/jsonModels/CoverageList.dart';
+import 'package:quick_quote/dataLists/ZipList.dart';
 import 'package:quick_quote/screens/policy_info.dart';
-import 'dart:convert';
-import '../jsonModels/LineDetailList.dart';
-import 'dart:developer';
 
 class ZipValidationScreen extends StatelessWidget {
-  
   final zipController = TextEditingController();
-
-  final List<String> zipList = ['12345', '23456', '34567'];
 
   static final _formKey = GlobalKey<FormState>();
 
@@ -36,6 +28,7 @@ class ZipValidationScreen extends StatelessWidget {
         centerTitle: true,
       ),
       body: Form(
+        key: _formKey,
         child: Center(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -61,10 +54,9 @@ class ZipValidationScreen extends StatelessWidget {
                   // color: Colors.grey.withOpacity(0.1),
                 ),
                 child: TextFormField(
-                  key: _formKey,
                   controller: zipController,
                   validator: (value) =>
-                      !zipList.contains(value) ? 'Unavailable' : null,
+                      !ZipList.zipList.contains(value) ? 'Unavailable' : null,
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.symmetric(vertical: 10),
@@ -87,19 +79,5 @@ class ZipValidationScreen extends StatelessWidget {
         ),
       ),
     );
-  }
-
-  Future<String> coverageDetailsFromAssets() async {
-    return await rootBundle.loadString('data\lob\pet\coverages.json');
-  }
-
-  Future coverageDetails() async {
-    String jsonString = await coverageDetailsFromAssets();
-    final jsonResponse = json.decode(jsonString);
-    CoverageList coverageList = new CoverageList.fromJson(jsonResponse);
-    //return coverageList.coverageList.forEach(f)
-    List<String> list;
-    coverageList.coverageList.map((i) => list.add(i.Name));
-    return list;
   }
 }
