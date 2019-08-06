@@ -32,6 +32,7 @@ class PolicyInfoQuestions {
           'id': 'petAge',
           'question': 'Pet Age',
           'type': 'dropdown',
+          'hasMultipleOptions': false,
           'availableOptions': [
             '6 months',
             '1 year',

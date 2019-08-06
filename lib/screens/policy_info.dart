@@ -4,7 +4,7 @@ import 'package:quick_quote/dataLists/PolicyInfoQuestions.dart';
 import 'package:quick_quote/screens/coverages_screen.dart';
 import 'package:quick_quote/widgets/widget_builder.dart';
 
-class PolicyInfoScreen extends StatelessWidget {
+class PolicyInfoScreen extends StatefulWidget {
   final String zipCode;
   var list = Map<String, Object>();
   var sectionTitleList = [];
@@ -22,13 +22,20 @@ class PolicyInfoScreen extends StatelessWidget {
   }
 
   @override
+  _PolicyInfoScreenState createState() => _PolicyInfoScreenState();
+}
+
+class _PolicyInfoScreenState extends State<PolicyInfoScreen> {
+  var inputsMap = Map<String, dynamic>();
+
+  @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: sectionTitleList.length,
+      length: widget.sectionTitleList.length,
       child: Scaffold(
         appBar: AppBar(
           bottom: TabBar(
-              tabs: sectionTitleList.map((sectionTitle) {
+              tabs: widget.sectionTitleList.map((sectionTitle) {
             return Tab(
               child: Text(
                 sectionTitle,
@@ -48,8 +55,8 @@ class PolicyInfoScreen extends StatelessWidget {
             Container(
               child: Form(
                 child: ListView(
-                  children: basicInfo.map((question) {
-                    return CustomWidgetBuilder(question);
+                  children: widget.basicInfo.map((question) {
+                    return CustomWidgetBuilder(question, inputsMap);
                   }).toList(),
                 ),
               ),
@@ -57,8 +64,8 @@ class PolicyInfoScreen extends StatelessWidget {
             Container(
               child: Form(
                 child: ListView(
-                  children: additionalDetails.map((question) {
-                    return CustomWidgetBuilder(question);
+                  children: widget.additionalDetails.map((question) {
+                    return CustomWidgetBuilder(question, inputsMap);
                   }).toList(),
                 ),
               ),
@@ -66,8 +73,8 @@ class PolicyInfoScreen extends StatelessWidget {
             Container(
               child: Form(
                 child: ListView(
-                  children: rateModifiers.map((question) {
-                    return CustomWidgetBuilder(question);
+                  children: widget.rateModifiers.map((question) {
+                    return CustomWidgetBuilder(question, inputsMap);
                   }).toList(),
                 ),
               ),
