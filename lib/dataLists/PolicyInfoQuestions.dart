@@ -17,7 +17,7 @@ class PolicyInfoQuestions {
         {
           'id': 'petType',
           'question': 'Pet Type',
-          'type': 'switch',
+          'type': 'switchDepends',
           'availableOptions': ['Dog', 'Cat'],
           'isRequired': true
         },
@@ -51,17 +51,19 @@ class PolicyInfoQuestions {
           'availableOptions': ['Yes', 'No'],
           'isRequired': true
         },
-        // {
-        //   'id': 'petBreed',
-        //   'question': 'Breed of Pet',
-        //   'type': 'dropdown',
-        //   'hasMultipleOptions': true,
-        //   'availableOptions': {
-        //     'Dog': ['Boxer', 'Mastiff'],
-        //     'Cat': ['Angora', 'cat2']
-        //   },
-        //   'isRequired': true
-        // },
+        {
+          'id': 'petBreed',
+          'question': 'Breed of Pet',
+          'type': 'dropdownSwitch',
+          'dependentOnId': 'petType',
+          'hasMultipleOptions': true,
+          'availableOptions': {
+            '': [],
+            'Dog': ['Boxer', 'Mastiff'],
+            'Cat': ['Angora', 'cat2'] 
+          },
+          'isRequired': true
+        },
         {
           'id': 'pedigreeCertNo',
           'question': 'Pedigree Certificate No.',
@@ -89,7 +91,7 @@ class PolicyInfoQuestions {
           'isRequired': false
         },
         {
-          'id': 'deClawedStatus',
+          'id': 'declawedStatus',
           'question': 'Declawed Status',
           'type': 'switch',
           'availableOptions': ['Yes', 'No'],
@@ -126,7 +128,7 @@ class PolicyInfoQuestions {
           'requiredFactor': {'Microchipped?': 'Yes'}
         },
         {
-          'id': 'weightContronMgmt',
+          'id': 'weightControlMgmt',
           'question': 'Weight Control Management ',
           'type': 'switch',
           'availableOptions': ['Yes', 'No'],

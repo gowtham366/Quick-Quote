@@ -1,6 +1,6 @@
 import 'package:flutter_web/material.dart';
 import 'package:quick_quote/dataLists/ZipList.dart';
-import 'package:quick_quote/screens/policy_info.dart';
+import 'package:quick_quote/screens/policy_info_static.dart';
 
 class ZipValidationScreen extends StatelessWidget {
   final zipController = TextEditingController();
